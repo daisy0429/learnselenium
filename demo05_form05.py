@@ -8,9 +8,9 @@ class TestCase(object):
         self.driver = webdriver.Chrome()
 
         # 当前文件所在路径
-        # / usr / local / bin / python3.8 / Users / dengping / project / PycharmProjects / pythonProject / demo05_forms.py
-        # / Users / dengping / project / PycharmProjects / pythonProject / demo05_forms.py
-        # / Users / dengping / project / PycharmProjects / pythonProject / demo05_forms.py
+        # / usr / local / bin / python3.8 / Users / dengping / project / PycharmProjects / pythonProject / demo05_form05.py
+        # / Users / dengping / project / PycharmProjects / pythonProject / demo05_form05.py
+        # / Users / dengping / project / PycharmProjects / pythonProject / demo05_form05.py
         # path = os.path.abspath(__file__)
         # print(path)
 
@@ -20,7 +20,7 @@ class TestCase(object):
         # print(path)
 
         # 取得指定本地文件的路径  file协议加载本地表单
-        file_path = 'file:///' + path + '/forms.html'
+        file_path = 'file:///' + path + '/form05.html'
         print(file_path)
 
         # 打开本地文件
@@ -50,3 +50,4 @@ class TestCase(object):
 if __name__ == '__main__':
     case = TestCase()
     case.test_login()
+    case.driver.quit()

@@ -47,3 +47,5 @@ if __name__ == '__main__':
     # case.test_property()
     #case.test_method()
     case.test_window()
+    sleep(2)
+    case.driver.quit()

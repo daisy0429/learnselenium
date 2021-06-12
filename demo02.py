@@ -104,3 +104,5 @@ if __name__ == '__main__':
     # case.test_find_element_by_css_selector()
     # case.test_find_elements_by_class_name()
     case.test_find_element()
+    sleep(2)
+    case.driver.quit()

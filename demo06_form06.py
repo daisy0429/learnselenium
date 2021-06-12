@@ -7,7 +7,7 @@ class TestCase(object):
     def __init__(self):
         self.driver = webdriver.Chrome()
         path = os.path.dirname(os.path.abspath(__file__))
-        file_path = 'file:///' + path + '/forms02.html'
+        file_path = 'file:///' + path + '/form06_checkboxradio.html'
         self.driver.get(file_path)
 
     def test_checkbox(self):
@@ -36,3 +36,4 @@ if __name__ == '__main__':
     case = TestCase()
     # case.test_checkbox()
     case.test_radio()
+    case.driver.quit()

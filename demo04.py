@@ -47,3 +47,5 @@ if __name__ == '__main__':
     # case.test_webElement_property()
     # case.test_webelement_method()
     case.test_webelement_method_findElementBy()
+    sleep(2)
+    case.driver.quit()
